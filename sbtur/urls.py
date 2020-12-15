@@ -3,5 +3,6 @@ from django.urls import path, include
 from rest_framework import routers
 
 urlpatterns = [
+    path('', include('api.urls')),
     path('admin/', admin.site.urls),
 ]
