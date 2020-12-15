@@ -1,0 +1,11 @@
+#VS Code
+.vscode
+
+#Django
+api/__pycache__
+api/migrations/__pycache__
+api/migrations/00*
+
+sbtur/__pycache__
+
+db.sqlite3
