@@ -1,0 +1,250 @@
+[
+    {
+        "model": "api.category",
+        "pk": 1,
+        "fields": {
+            "name": "Hospedagem",
+            "slug": "hospedagem"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 2,
+        "fields": {
+            "name": "Apartamento",
+            "slug": "apartamento"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 3,
+        "fields": {
+            "name": "Hostel",
+            "slug": "hostel"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 1,
+        "fields": {
+            "name": "Pocos de Caldas",
+            "slug": "poco-de-caldas",
+            "state": "MG"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 2,
+        "fields": {
+            "name": "Porto Alegre",
+            "slug": "porto-alegre",
+            "state": "RS"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 3,
+        "fields": {
+            "name": "Florianópolis",
+            "slug": "florianopolis",
+            "state": "SC"       
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 4,
+        "fields": {
+            "name": "Joinville",
+            "slug": "joinville",
+            "state": "SC"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 5,
+        "fields": {
+            "name": "Brasília",
+            "slug": "brasilia",
+            "state": "DF"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 6,
+        "fields": {
+            "name": "Iraí",
+            "slug": "irai",
+            "state": "RS"
+        }
+    },
+    {
+        "model": "api.city",
+        "pk": 7,
+        "fields": {
+            "name": "Gramado",
+            "slug": "gramado",
+            "state": "RS"
+        }
+    },
+    {
+        "model": "api.country",
+        "pk": 1,
+        "fields": {
+            "name": "Brasil",
+            "slug": "brasil"
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 1,
+        "fields": {
+            "hotel_name": "Ibis Poços de Caldas",
+            "slug": "ibis-pocos-de-caldas",
+            "image": "http://sbtur.com/images/ibis-pocos-de-caldas.jpg",
+            "city": 1,
+            "country": 1,
+            "category": 1,
+            "price": 6250
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 2,
+        "fields": {
+            "hotel_name": "Intercity Cidade Baixa",
+            "slug": "intercity-cidade-baixa",
+            "image": "http://sbtur.com/images/intercity-cidade-baixa.jpg",
+            "city": 2,
+            "country": 1,
+            "category": 1,
+            "price": 8300
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 3,
+        "fields": {
+            "hotel_name": "Slavieiro Florianópolis Baia Norte",
+            "slug": "slavieiro-florianopolis-baia-norte",
+            "image": "http://sbtur.com/images/slavieiro-florianopolis.jpg",
+            "city": 3,
+            "country": 1,
+            "category": 1,
+            "price": 5230
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 4,
+        "fields": {
+            "hotel_name": "Hotel Fazenda Dona Francisca",
+            "slug": "hotel-fazenda-dona-francisca",
+            "image": "http://sbtur.com/images/hotel-fazenda-dona-francisca.jpg",
+            "city": 4,
+            "country": 1,
+            "category": 3,
+            "price": 4950
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 5,
+        "fields": {
+            "hotel_name": "Allia Gran Hotel Brasília Suites/ Allia Hotel",
+            "slug": "allia-gran-hotel-brasilia-suites-allia-hotel",
+            "image": "http://sbtur.com/images/allia-gran-hotel-brasilia-suites.jpg",
+            "city": 5,
+            "country": 1,
+            "category": 1,
+            "price": 4950
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 6,
+        "fields": {
+            "hotel_name": "AJ Termas Iraí",
+            "slug": "aj-termas-irai",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 6,
+            "country": 1,
+            "category": 1,
+            "price": 6900
+        }
+    },
+    {
+        "model": "api.hotel",
+        "pk": 7,
+        "fields": {
+            "hotel_name": "Alameda Alegra",
+            "slug": "alameda-alegra",
+            "image": "http://sbtur.com/images/alameda-alegra.jpg",
+            "city": 7,
+            "country": 1,
+            "category": 1,
+            "price": 3500
+        }
+    },
+    {
+        "model": "api.route",
+        "pk": 1,
+        "fields": {
+            "route": "/"
+        }
+    },
+    {
+        "model": "api.route",
+        "pk": 2,
+        "fields": {
+            "route": "/destinos"
+        }
+    },
+    {
+        "model": "api.route",
+        "pk": 3,
+        "fields": {
+            "route": "/sobre"
+        }
+    },
+    {
+        "model": "api.escaparate",
+        "pk": 1,
+        "fields": {
+            "title": "Melhores Hotéis",
+            "subtitle": "Veja os hotéis mais procurados",
+            "routes": [1, 2],
+            "itens": [7,6,5,4,3]
+        }
+    },
+    {
+        "model": "api.escaparate",
+        "pk": 2,
+        "fields": {
+            "title": "Pacotes imperdíveis",
+            "subtitle": "Procurando pacotes em família?",
+            "routes": [1],
+            "itens": [3,5,4,2,1]
+        }
+    },
+    {
+        "model": "api.escaparate",
+        "pk": 3,
+        "fields": {
+            "title": "Hotéis na região sul",
+            "subtitle": "Veja os melhores hotéis do RS",
+            "routes": [],
+            "itens": [7,2,1,6,3]
+        }
+    },
+    {
+        "model": "api.escaparate",
+        "pk": 4,
+        "fields": {
+            "title": "Hotéis que contam nossa história",
+            "subtitle": "Veja por onde nós passamos todo ano.",
+            "routes": [3],
+            "itens": [3,5,2,4]
+        }
+    }
+
+]
