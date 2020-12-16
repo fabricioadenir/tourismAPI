@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
-from .views import EscaparateViewSet, CategoryViewSet, CityViewSet, CountryViewSet, HotelViewSet, RouteViewSet
+from .views import (EscaparateViewSet, CategoryViewSet,
+                    CityViewSet, CountryViewSet, HotelViewSet, RouteViewSet)
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()

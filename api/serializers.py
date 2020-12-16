@@ -1,6 +1,6 @@
 from api.models import Escaparate, Route, Hotel, Category, City, Country
 from rest_framework import serializers
-import json
+
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
@@ -27,7 +27,8 @@ class HotelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Hotel
-        fields = ['hotel_name', 'slug', 'image', 'city', 'country', 'category', 'price']
+        fields = ['hotel_name', 'slug', 'image',
+                  'city', 'country', 'category', 'price']
 
 
 class RouteSerializer(serializers.ModelSerializer):
@@ -44,7 +45,7 @@ class EscaparateSerializer(serializers.ModelSerializer):
         model = Escaparate
         fields = ['id', 'title', 'subtitle', 'routes', 'itens']
         depth = 1
-        
+
     def get_routes(self, instance):
         teste = []
         for item in instance.routes.all():

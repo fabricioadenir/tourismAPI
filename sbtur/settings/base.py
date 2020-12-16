@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import decouple
-import sys
+# import sys
 
 VERSION = "0.1.0"
 
@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = decouple.config("SECRET_KEY", default="e28y=1hva=%88@ib&pth@d2)0u)(_wzu(fx@p(cvk^ns)g_zxf")
+SECRET_KEY = decouple.config(
+    "SECRET_KEY", default="e28y=1hva=%88@ib&pth@d2)0u)(_wzu(fx@p(cvk^ns)g_zxf")
 
 
 # Application definition
@@ -77,8 +78,8 @@ REST_FRAMEWORK = {
 }
 
 # Covers regular testing and django-coverage
-if 'test' in sys.argv or 'test_coverage' in sys.argv:
-    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+# if 'test' in sys.argv or 'test_coverage' in sys.argv:
+#     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 
 # Internationalization

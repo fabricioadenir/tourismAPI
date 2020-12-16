@@ -9,7 +9,7 @@ class Category(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super(Category, self).save(*args, **kwargs)
-    
+
     def __str__(self):
         return self.name
 
@@ -22,7 +22,7 @@ class City(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super(City, self).save(*args, **kwargs)
-    
+
     def __str__(self):
         return self.name
 
@@ -34,13 +34,15 @@ class Country(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super(Country, self).save(*args, **kwargs)
-    
+
     def __str__(self):
         return self.name
 
 
 class Hotel(models.Model):
-    #TODO foi usado o nome hotel por não saber se é um cadastro de hotel ou uma promoção
+    # TODO foi usado o nome hotel na classe
+    # por não saber se é um cadastro de hotel
+    # ou uma promoção
     hotel_name = models.CharField(max_length=200)
     slug = models.SlugField(unique=True, editable=False)
     image = models.URLField()
@@ -52,7 +54,7 @@ class Hotel(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.hotel_name)
         super(Hotel, self).save(*args, **kwargs)
-    
+
     def __str__(self):
         return self.hotel_name
 
