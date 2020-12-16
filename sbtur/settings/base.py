@@ -26,11 +26,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = decouple.config("SECRET_KEY", default="e28y=1hva=%88@ib&pth@d2)0u)(_wzu(fx@p(cvk^ns)g_zxf")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = decouple.config("DEBUG", default=0, cast=bool)
-
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-
 
 # Application definition
 
@@ -81,59 +76,9 @@ REST_FRAMEWORK = {
     ]
 }
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-DATABASE = decouple.config("DATABASE", default="sbtur")
-DB_USER = decouple.config("DB_USER", default="sbtur_user")
-DB_PWD = decouple.config("DB_PWD", default="sbtur_pwd")
-DB_HOST = decouple.config("DB_HOST", default="localhost")
-DB_PORT = decouple.config("DB_PORT", default=5432, cast=int)
-
-
-#DEBUG
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-'''
-#PROD
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': DATABASE,
-        'USER': DB_USER,
-        'PASSWORD': DB_PWD,
-        'HOST': DB_HOST,
-        'PORT': DB_PORT,
-    }
-}
-
 # Covers regular testing and django-coverage
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
-
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
 
 
 # Internationalization
@@ -154,3 +99,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static'

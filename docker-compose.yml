@@ -1,6 +1,6 @@
 version: '2.2'
 services:
-    db_sbtur:
+    db:
         container_name: db_sbtur
         image: postgres:10.5
         ports:
