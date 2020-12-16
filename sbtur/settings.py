@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = decouple.config("SECRET_KEY", default="e28y=1hva=%88@ib&pth@d2)0u)(_wzu(fx@p(cvk^ns)g_zxf")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = decouple.config("DEBUG", default=1, cast=bool)
+DEBUG = decouple.config("DEBUG", default=0, cast=bool)
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -84,10 +84,31 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+DATABASE = decouple.config("DATABASE", default="sbtur")
+DB_USER = decouple.config("DB_USER", default="sbtur_user")
+DB_PWD = decouple.config("DB_PWD", default="sbtur_pwd")
+DB_HOST = decouple.config("DB_HOST", default="localhost")
+DB_PORT = decouple.config("DB_PORT", default=5432, cast=int)
+
+
+#DEBUG
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+'''
+#PROD
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': DATABASE,
+        'USER': DB_USER,
+        'PASSWORD': DB_PWD,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,
     }
 }
 
