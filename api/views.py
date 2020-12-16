@@ -1,12 +1,11 @@
-from django.shortcuts import render
-from rest_framework.response import Response
 from api.models import Category, City, Country, Hotel, Route, Escaparate
 from rest_framework import viewsets, permissions
-from api.serializers import EscaparateSerializer, CategorySerializer, CitySerializer, CountrySerializer, RouteSerializer, HotelSerializer
-from rest_framework import filters
+from api.serializers import (EscaparateSerializer, CategorySerializer,
+                             CitySerializer, CountrySerializer,
+                             RouteSerializer, HotelSerializer)
 
 
-#Classe solicitada no teste
+# Classe solicitada no teste
 class EscaparateViewSet(viewsets.ModelViewSet):
     serializer_class = EscaparateSerializer
     permission_classes = [permissions.IsAuthenticated]
