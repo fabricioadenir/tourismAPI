@@ -7,5 +7,6 @@ api/migrations/__pycache__
 api/migrations/00*
 
 sbtur/__pycache__
+sbtur/settings/__pycache__
 
 db.sqlite3
