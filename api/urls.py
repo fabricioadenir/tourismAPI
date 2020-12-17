@@ -4,7 +4,7 @@ from .views import (EscaparateViewSet, CategoryViewSet,
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register("vitrine", EscaparateViewSet, basename="vitrine")
+router.register("vitrines", EscaparateViewSet, basename="vitrines")
 router.register("categorias", CategoryViewSet, basename="categorias")
 router.register("cidades", CityViewSet, basename="cidades")
 router.register("paises", CountryViewSet, basename="paises")
