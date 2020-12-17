@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import decouple
-# import sys
 
 VERSION = "0.1.0"
 
@@ -29,6 +28,8 @@ SECRET_KEY = decouple.config(
 
 
 # Application definition
+
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
@@ -76,11 +77,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
-
-# Covers regular testing and django-coverage
-# if 'test' in sys.argv or 'test_coverage' in sys.argv:
-#     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
