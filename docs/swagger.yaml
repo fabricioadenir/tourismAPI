@@ -1,0 +1,1037 @@
+openapi: 3.0.2
+info:
+  title: "SBTUR - API para gerenciamento de vitrines de promoções"
+  version: 0.1.0
+  description: API desenvolvida para implementar turismo na SBTUR
+paths:
+  /vitrines/:
+    get:
+      operationId: listEscaparates
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EscaparateRoutes'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Escaparate'
+          description: ''
+      tags:
+      - vitrines
+    post:
+      operationId: createEscaparate
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Escaparate'
+          description: ''
+      tags:
+      - vitrines
+  /vitrines/{id}/:
+    get:
+      operationId: retrieveEscaparate
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Escaparate'
+          description: ''
+      tags:
+      - vitrines
+    put:
+      operationId: updateEscaparate
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Escaparate'
+          description: ''
+      tags:
+      - vitrines
+    patch:
+      operationId: partialUpdateEscaparate
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Escaparate'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Escaparate'
+          description: ''
+      tags:
+      - vitrines
+    delete:
+      operationId: destroyEscaparate
+      description: "Respons\xE1vel por retornar todas as vitrines cadastradas na API,\n\
+        \ntamb\xE9m permitindo a pesquisa por seu {id}."
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - vitrines
+  /categorias/:
+    get:
+      operationId: listCategorys
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - categorias
+    post:
+      operationId: createCategory
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Category'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - categorias
+  /categorias/{id}/:
+    get:
+      operationId: retrieveCategory
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - categorias
+    put:
+      operationId: updateCategory
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Category'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - categorias
+    patch:
+      operationId: partialUpdateCategory
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Category'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - categorias
+    delete:
+      operationId: destroyCategory
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - categorias
+  /cidades/:
+    get:
+      operationId: listCitys
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/City'
+          description: ''
+      tags:
+      - cidades
+    post:
+      operationId: createCity
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/City'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/City'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/City'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+          description: ''
+      tags:
+      - cidades
+  /cidades/{id}/:
+    get:
+      operationId: retrieveCity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+          description: ''
+      tags:
+      - cidades
+    put:
+      operationId: updateCity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/City'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/City'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/City'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+          description: ''
+      tags:
+      - cidades
+    patch:
+      operationId: partialUpdateCity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/City'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/City'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/City'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+          description: ''
+      tags:
+      - cidades
+    delete:
+      operationId: destroyCity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - cidades
+  /paises/:
+    get:
+      operationId: listCountrys
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Country'
+          description: ''
+      tags:
+      - paises
+    post:
+      operationId: createCountry
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Country'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Country'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Country'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Country'
+          description: ''
+      tags:
+      - paises
+  /paises/{id}/:
+    get:
+      operationId: retrieveCountry
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Country'
+          description: ''
+      tags:
+      - paises
+    put:
+      operationId: updateCountry
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Country'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Country'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Country'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Country'
+          description: ''
+      tags:
+      - paises
+    patch:
+      operationId: partialUpdateCountry
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Country'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Country'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Country'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Country'
+          description: ''
+      tags:
+      - paises
+    delete:
+      operationId: destroyCountry
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - paises
+  /hoteis/:
+    get:
+      operationId: listHotels
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Hotel'
+          description: ''
+      tags:
+      - hoteis
+    post:
+      operationId: createHotel
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hotel'
+          description: ''
+      tags:
+      - hoteis
+  /hoteis/{id}/:
+    get:
+      operationId: retrieveHotel
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hotel'
+          description: ''
+      tags:
+      - hoteis
+    put:
+      operationId: updateHotel
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hotel'
+          description: ''
+      tags:
+      - hoteis
+    patch:
+      operationId: partialUpdateHotel
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Hotel'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hotel'
+          description: ''
+      tags:
+      - hoteis
+    delete:
+      operationId: destroyHotel
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - hoteis
+  /rotas/:
+    get:
+      operationId: listRoutes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Route'
+          description: ''
+      tags:
+      - rotas
+    post:
+      operationId: createRoute
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Route'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Route'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Route'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+          description: ''
+      tags:
+      - rotas
+  /rotas/{id}/:
+    get:
+      operationId: retrieveRoute
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+          description: ''
+      tags:
+      - rotas
+    put:
+      operationId: updateRoute
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Route'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Route'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Route'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+          description: ''
+      tags:
+      - rotas
+    patch:
+      operationId: partialUpdateRoute
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Route'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Route'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Route'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+          description: ''
+      tags:
+      - rotas
+    delete:
+      operationId: destroyRoute
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - rotas
+components:
+  schemas:
+    Escaparate:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        title:
+          type: string
+          maxLength: 150
+        subtitle:
+          type: string
+          maxLength: 150
+        routes:
+          type: string
+          readOnly: true
+        itens:
+          type: array
+          items:
+            type: object
+            properties:
+              hotel_name:
+                type: string
+                maxLength: 200
+              slug:
+                type: string
+                readOnly: true
+                pattern: ^[-a-zA-Z0-9_]+$
+              image:
+                type: string
+                format: uri
+                maxLength: 200
+                pattern: "^(?:[a-z0-9.+-]*)://(?:[^\\s:@/]+(?::[^\\s:@/]*)?@)?(?:(?:25[0-5]|2[0-4]\\\
+                  d|[0-1]?\\d?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}|\\\
+                  [[0-9a-f:.]+\\]|([a-z\xA1-\uFFFF0-9](?:[a-z\xA1-\uFFFF0-9-]{0,61}[a-z\xA1\
+                  -\uFFFF0-9])?(?:\\.(?!-)[a-z\xA1-\uFFFF0-9-]{1,63}(?<!-))*\\.(?!-)(?:[a-z\xA1\
+                  -\uFFFF-]{2,63}|xn--[a-z0-9]{1,59})(?<!-)\\.?|localhost))(?::\\\
+                  d{2,5})?(?:[/?#][^\\s]*)?\\z"
+              city:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    maxLength: 200
+                  slug:
+                    type: string
+                    readOnly: true
+                    pattern: ^[-a-zA-Z0-9_]+$
+                  state:
+                    type: string
+                    maxLength: 2
+                required:
+                - name
+                - state
+              country:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    maxLength: 200
+                  slug:
+                    type: string
+                    readOnly: true
+                    pattern: ^[-a-zA-Z0-9_]+$
+                required:
+                - name
+              category:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    maxLength: 50
+                  slug:
+                    type: string
+                    readOnly: true
+                    pattern: ^[-a-zA-Z0-9_]+$
+                required:
+                - name
+              price:
+                type: number
+            required:
+            - hotel_name
+            - image
+            - city
+            - country
+            - category
+            - price
+      required:
+      - title
+      - subtitle
+      - itens
+    EscaparateRoutes:
+      type: object
+      properties:
+        routes:
+          type: array
+          items:
+            type: string
+      required:
+      - routes
+    Category:
+      type: object
+      properties:
+        name:
+          type: string
+          maxLength: 50
+        slug:
+          type: string
+          readOnly: true
+          pattern: ^[-a-zA-Z0-9_]+$
+      required:
+      - name
+    City:
+      type: object
+      properties:
+        name:
+          type: string
+          maxLength: 200
+        slug:
+          type: string
+          readOnly: true
+          pattern: ^[-a-zA-Z0-9_]+$
+        state:
+          type: string
+          maxLength: 2
+      required:
+      - name
+      - state
+    Country:
+      type: object
+      properties:
+        name:
+          type: string
+          maxLength: 200
+        slug:
+          type: string
+          readOnly: true
+          pattern: ^[-a-zA-Z0-9_]+$
+      required:
+      - name
+    Hotel:
+      type: object
+      properties:
+        hotel_name:
+          type: string
+          maxLength: 200
+        slug:
+          type: string
+          readOnly: true
+          pattern: ^[-a-zA-Z0-9_]+$
+        image:
+          type: string
+          format: uri
+          maxLength: 200
+          pattern: "^(?:[a-z0-9.+-]*)://(?:[^\\s:@/]+(?::[^\\s:@/]*)?@)?(?:(?:25[0-5]|2[0-4]\\\
+            d|[0-1]?\\d?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}|\\[[0-9a-f:.]+\\\
+            ]|([a-z\xA1-\uFFFF0-9](?:[a-z\xA1-\uFFFF0-9-]{0,61}[a-z\xA1-\uFFFF0-9])?(?:\\\
+            .(?!-)[a-z\xA1-\uFFFF0-9-]{1,63}(?<!-))*\\.(?!-)(?:[a-z\xA1-\uFFFF-]{2,63}|xn--[a-z0-9]{1,59})(?<!-)\\\
+            .?|localhost))(?::\\d{2,5})?(?:[/?#][^\\s]*)?\\z"
+        city:
+          type: object
+          properties:
+            name:
+              type: string
+              maxLength: 200
+            slug:
+              type: string
+              readOnly: true
+              pattern: ^[-a-zA-Z0-9_]+$
+            state:
+              type: string
+              maxLength: 2
+          required:
+          - name
+          - state
+        country:
+          type: object
+          properties:
+            name:
+              type: string
+              maxLength: 200
+            slug:
+              type: string
+              readOnly: true
+              pattern: ^[-a-zA-Z0-9_]+$
+          required:
+          - name
+        category:
+          type: object
+          properties:
+            name:
+              type: string
+              maxLength: 50
+            slug:
+              type: string
+              readOnly: true
+              pattern: ^[-a-zA-Z0-9_]+$
+          required:
+          - name
+        price:
+          type: number
+      required:
+      - hotel_name
+      - image
+      - city
+      - country
+      - category
+      - price
+    Route:
+      type: object
+      properties:
+        route:
+          type: string
+      required:
+      - route
