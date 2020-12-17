@@ -5,6 +5,7 @@
 api/__pycache__
 api/migrations/__pycache__
 api/migrations/00*
+api/tests/__pycache__
 
 sbtur/__pycache__
 sbtur/settings/__pycache__
