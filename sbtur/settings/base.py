@@ -29,7 +29,7 @@ SECRET_KEY = decouple.config(
 
 # Application definition
 
-ALLOWED_HOSTS = ["localhost, "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
