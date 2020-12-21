@@ -33,4 +33,4 @@ jobs:
         pycodestyle --config=pycodestyle .
     - name: Test with Django
       run: |
-        # python manage.py test api/tests --verbosity 2
+        python manage.py test api/tests --verbosity 2
