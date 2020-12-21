@@ -34,8 +34,7 @@ docker-compose up -d --build
 &nbsp;
 
 # EndPoit e como usar:
-Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://fabricioadenir.github.io/sbturAPI/) e veja a documentação de uso.
-* OBS. Repositório está privado então o "clique aqui" não irá funcionar. em "docs/index.html" pode ser visto a documentação Swagger.yaml, usando um "Live Server (VS Code)"  da vida :).
+Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/DOC.md) e veja a documentação de uso.
 
 &nbsp;
 # Executar testes

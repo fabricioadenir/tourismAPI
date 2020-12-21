@@ -5,7 +5,7 @@ from django.utils.text import slugify
 
 class CategoryTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):
@@ -31,7 +31,7 @@ class CategoryTestClass(TestCase):
 
 class CityTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):
@@ -62,7 +62,7 @@ class CityTestClass(TestCase):
 
 class CountryTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):
@@ -90,7 +90,7 @@ class CountryTestClass(TestCase):
 
 class HotelTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):
@@ -147,7 +147,7 @@ class HotelTestClass(TestCase):
 
 class RouteTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):
@@ -161,7 +161,7 @@ class RouteTestClass(TestCase):
 
 class EscaparateTestClass(TestCase):
     """
-    Responsável por testar a estrutura de dados.
+    Responsible for testing the data structure.
     """
     @classmethod
     def setUpTestData(cls):

@@ -1,5 +1,5 @@
 [pycodestyle]
 count = True
 max-line-length = 120
-exclude = api/tests,environment,virtualenv
+exclude = api/tests,environment,virtualenv,api/migrations/
 statistics = True

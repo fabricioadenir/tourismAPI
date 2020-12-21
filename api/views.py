@@ -5,7 +5,7 @@ from api.serializers import (EscaparateSerializer, CategorySerializer,
                              RouteSerializer, HotelSerializer)
 
 
-# Classe solicitada no teste
+# Class requested in the test
 class EscaparateViewSet(viewsets.ModelViewSet):
     serializer_class = EscaparateSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -19,7 +19,7 @@ class EscaparateViewSet(viewsets.ModelViewSet):
         return escaparate
 
 
-# Classes implementadas em bonus
+# Class implemented in bonus
 class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticated]
