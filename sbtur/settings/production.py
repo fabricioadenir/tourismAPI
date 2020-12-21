@@ -4,7 +4,7 @@ import decouple
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = decouple.config("DEBUG", default=0, cast=bool)
 
-ALLOWED_HOSTS += ['.pythonanywhere.com']
+ALLOWED_HOSTS += ['seu_dns']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

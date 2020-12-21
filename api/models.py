@@ -40,9 +40,8 @@ class Country(models.Model):
 
 
 class Hotel(models.Model):
-    # TODO foi usado o nome hotel na classe
-    # por não saber se é um cadastro de hotel
-    # ou uma promoção
+    # TODO the hotel name was used in the class
+    # because it does not know if it is a hotel registration or a promotion
     hotel_name = models.CharField(max_length=200)
     slug = models.SlugField(unique=True, editable=False)
     image = models.URLField()

@@ -2,3 +2,5 @@ djangorestframework==3.12.2
 python-decouple==3.3
 psycopg2-binary==2.8.6
 autopep8==1.5.4
+flake8==3.8.4
+python-dotenv==0.15.0

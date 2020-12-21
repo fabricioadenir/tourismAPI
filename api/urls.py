@@ -4,12 +4,12 @@ from .views import (EscaparateViewSet, CategoryViewSet,
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register("vitrines", EscaparateViewSet, basename="vitrines")
-router.register("categorias", CategoryViewSet, basename="categorias")
-router.register("cidades", CityViewSet, basename="cidades")
-router.register("paises", CountryViewSet, basename="paises")
-router.register("hoteis", HotelViewSet, basename="hoteis")
-router.register("rotas", RouteViewSet, basename="rotas")
+router.register("vitrines", EscaparateViewSet, basename="windows")
+router.register("categorias", CategoryViewSet, basename="categories")
+router.register("cidades", CityViewSet, basename="cities")
+router.register("paises", CountryViewSet, basename="countries")
+router.register("hoteis", HotelViewSet, basename="hotels")
+router.register("rotas", RouteViewSet, basename="routes")
 
 urlpatterns = [
     url('', include(router.urls))
