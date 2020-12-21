@@ -48,7 +48,7 @@ http://localhost:8000/vitrines/ method GET
 ![ ](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/destinos.png?raw=true)
 
 
-#### Listagem das vitrines para página `/`
+#### Listagem das vitrines para página `/sobre`
 
 - Enviar como payload um array { "routes": ["/sobre"] }
 - Como mostra a imagem.
