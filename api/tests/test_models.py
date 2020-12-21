@@ -65,6 +65,7 @@ class CountryTestClass(TestCase):
     Responsible for testing the data structure.
     """
     @classmethod
+    def setUpTestData(cls):
         Country.objects.create(
             name="Brasil"
         )
