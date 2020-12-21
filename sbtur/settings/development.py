@@ -20,4 +20,5 @@ DATABASES = {
 # Covers regular testing and django-coverage
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-    DATABASES['default']['NAME'] = f"{BASE_DIR}/db.sqlite3"
+
+SOUTH_TESTS_MIGRATE = False
