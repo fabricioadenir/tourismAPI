@@ -1,7 +1,6 @@
 from django.test import TestCase
 from api.models import Category, City, Country, Hotel, Route, Escaparate
 from django.utils.text import slugify
-from sbtur.settings import development
 
 
 class CategoryTestClass(TestCase):
@@ -10,12 +9,6 @@ class CategoryTestClass(TestCase):
     """
     @classmethod
     def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         Category.objects.create(name="Hospedagem de Verão")
 
     def test_field_name(self):
@@ -42,12 +35,6 @@ class CityTestClass(TestCase):
     """
     @classmethod
     def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         City.objects.create(
             name="Porto Alegre",
             state="RS"
@@ -78,13 +65,6 @@ class CountryTestClass(TestCase):
     Responsible for testing the data structure.
     """
     @classmethod
-    def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         Country.objects.create(
             name="Brasil"
         )
@@ -113,12 +93,6 @@ class HotelTestClass(TestCase):
     """
     @classmethod
     def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         Category.objects.create(name="Hospedagem de Verão")
         City.objects.create(
             name="",
@@ -176,12 +150,6 @@ class RouteTestClass(TestCase):
     """
     @classmethod
     def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         Route.objects.create(route="/destino")
 
     def test_field_name(self):
@@ -196,12 +164,6 @@ class EscaparateTestClass(TestCase):
     """
     @classmethod
     def setUpTestData(cls):
-        development.DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(development.BASE_DIR, 'db.sqlite3'),
-            }
-        }
         Category.objects.create(name="Hospedagem de Verão")
         City.objects.create(
             name="Florianópolis",
