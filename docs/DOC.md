@@ -2,10 +2,10 @@
 
 # v0.1.0
 
-# HTML com documentação.
-**Precisa de um servidor html**
+# EndPoint da documentação Swagger.
+**Disponível todos os endpoint**
 
-* no caminho "docs/index.html" possui uma documentação swagger que mostra detalhadamente como usar a API. Por se tratar de um repositório privado, não foi possível utilizar o recurso do GITHUB pages para renderizar.  
+* http://localhost:8000/docs 
 
 # Exemplo de uso.
 

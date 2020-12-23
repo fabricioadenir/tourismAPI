@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 import decouple
 
 VERSION = "0.1.0"
@@ -96,4 +97,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

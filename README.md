@@ -34,6 +34,9 @@ docker-compose up -d --build
 &nbsp;
 
 # EndPoit e como usar:
+
+* http://localhost:8000/docs
+
 Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/DOC.md) e veja a documentação de uso.
 
 &nbsp;

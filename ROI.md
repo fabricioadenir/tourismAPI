@@ -67,7 +67,8 @@ $ python manage.py runserver
 &nbsp;
 
 # EndPoit e como usar:
-Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://fabricioadenir.github.io/sbturAPI/) e veja a documentação de uso.
+
+* http://localhost:8000/docs
 
 ## Contato
 
