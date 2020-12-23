@@ -1,3 +1,4 @@
+{% load static %}
 <html>
     <head>
         <link rel="stylesheet" href="//unpkg.com/swagger-ui-dist@3/swagger-ui.css">
@@ -6,7 +7,7 @@
 
             function render() {
                 var ui = SwaggerUIBundle({
-                    url:  'swagger.yaml',
+                    url:"{% static 'swagger.yaml' %}",
                     dom_id: '#swagger-ui',
                     presets: [
                         SwaggerUIBundle.presets.apis,
