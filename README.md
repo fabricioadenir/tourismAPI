@@ -37,7 +37,7 @@ docker-compose up -d --build
 
 * http://localhost:8000/docs
 
-Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://github.com/fabricioadenir/tourismAPI/blob/main/docs/DOC.md) e veja a documentação de uso.
+Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://fabricioadenir.github.io/tourismAPI/) e veja a documentação de uso.
 
 &nbsp;
 # Executar testes
