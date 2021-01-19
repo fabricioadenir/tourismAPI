@@ -110,7 +110,7 @@ class HotelTestClass(TestCase):
 
         Hotel.objects.create(
             hotel_name="Alameda Alegra",
-            image="http://sbtur.com/images/alameda-alegra.jpg",
+            image="http://tourism.com/images/alameda-alegra.jpg",
             city=city,
             country=country,
             category=category,
@@ -187,7 +187,7 @@ class EscaparateTestClass(TestCase):
 
         Hotel.objects.create(
             hotel_name="Alameda Alegra",
-            image="http://sbtur.com/images/alameda-alegra.jpg",
+            image="http://tourism.com/images/alameda-alegra.jpg",
             city=city_floripa,
             country=country,
             category=category,
@@ -196,7 +196,7 @@ class EscaparateTestClass(TestCase):
 
         Hotel.objects.create(
             hotel_name="Ibis Poços de Caldas",
-            image="http://sbtur.com/images/ibis-pocos-de-caldas.jpg",
+            image="http://tourism.com/images/ibis-pocos-de-caldas.jpg",
             city=city_caldas,
             country=country,
             category=category,

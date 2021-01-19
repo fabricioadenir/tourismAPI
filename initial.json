@@ -100,7 +100,7 @@
         "fields": {
             "hotel_name": "Ibis Poços de Caldas",
             "slug": "ibis-pocos-de-caldas",
-            "image": "http://sbtur.com/images/ibis-pocos-de-caldas.jpg",
+            "image": "http://tourism.com/images/ibis-pocos-de-caldas.jpg",
             "city": 1,
             "country": 1,
             "category": 1,
@@ -113,7 +113,7 @@
         "fields": {
             "hotel_name": "Intercity Cidade Baixa",
             "slug": "intercity-cidade-baixa",
-            "image": "http://sbtur.com/images/intercity-cidade-baixa.jpg",
+            "image": "http://tourism.com/images/intercity-cidade-baixa.jpg",
             "city": 2,
             "country": 1,
             "category": 1,
@@ -126,7 +126,7 @@
         "fields": {
             "hotel_name": "Slavieiro Florianópolis Baia Norte",
             "slug": "slavieiro-florianopolis-baia-norte",
-            "image": "http://sbtur.com/images/slavieiro-florianopolis.jpg",
+            "image": "http://tourism.com/images/slavieiro-florianopolis.jpg",
             "city": 3,
             "country": 1,
             "category": 1,
@@ -139,7 +139,7 @@
         "fields": {
             "hotel_name": "Hotel Fazenda Dona Francisca",
             "slug": "hotel-fazenda-dona-francisca",
-            "image": "http://sbtur.com/images/hotel-fazenda-dona-francisca.jpg",
+            "image": "http://tourism.com/images/hotel-fazenda-dona-francisca.jpg",
             "city": 4,
             "country": 1,
             "category": 3,
@@ -152,7 +152,7 @@
         "fields": {
             "hotel_name": "Allia Gran Hotel Brasília Suites/ Allia Hotel",
             "slug": "allia-gran-hotel-brasilia-suites-allia-hotel",
-            "image": "http://sbtur.com/images/allia-gran-hotel-brasilia-suites.jpg",
+            "image": "http://tourism.com/images/allia-gran-hotel-brasilia-suites.jpg",
             "city": 5,
             "country": 1,
             "category": 1,
@@ -165,7 +165,7 @@
         "fields": {
             "hotel_name": "AJ Termas Iraí",
             "slug": "aj-termas-irai",
-            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "image": "http://tourism.com/images/aj-termas-irai.jpg",
             "city": 6,
             "country": 1,
             "category": 1,
@@ -178,7 +178,7 @@
         "fields": {
             "hotel_name": "Alameda Alegra",
             "slug": "alameda-alegra",
-            "image": "http://sbtur.com/images/alameda-alegra.jpg",
+            "image": "http://tourism.com/images/alameda-alegra.jpg",
             "city": 7,
             "country": 1,
             "category": 1,

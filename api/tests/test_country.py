@@ -14,8 +14,8 @@ class CountryViewSetTestClass(TestCase):
 
     def setUp(self):
         self.country = Country.objects.create(name="Brasil")
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 

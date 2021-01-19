@@ -14,8 +14,8 @@ class RouteViewSetTestClass(TestCase):
 
     def setUp(self):
         self.route = Route.objects.create(route="/destinos")
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 

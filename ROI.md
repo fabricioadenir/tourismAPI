@@ -1,6 +1,6 @@
 <img src="docs/roi.png" width="123px" alt="verifica.me" align="right">
 
-# sbturAPI
+# tourismAPI
 
 # v0.1.0
 
@@ -29,8 +29,8 @@ docker-compose up -d --build --no-deps db
 Caso não opte em utilizar o Docker:
 1. Baixar o [PostGreSql](https://www.postgresql.org/download/windows/)
 2. Criar os usuários default:
-***Usuário default*** 'sbtur'
-***Senha default*** 'sbtur_pwd'
+***Usuário default*** 'tourism'
+***Senha default*** 'tourism_pwd'
 3. Por default os arquivos de condiguração já estão com usuário e porta padrão do DB.
 
 4. Instalar as dependências.

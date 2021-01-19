@@ -14,8 +14,8 @@ class CategoryViewSetTestClass(TestCase):
 
     def setUp(self):
         self.category = Category.objects.create(name="Hospedagem")
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 

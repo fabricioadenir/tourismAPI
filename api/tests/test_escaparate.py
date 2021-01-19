@@ -35,7 +35,7 @@ class EscaparateViewSetTestClass(TestCase):
 
         Hotel.objects.create(
             hotel_name="Alameda Alegra",
-            image="http://sbtur.com/images/alameda-alegra.jpg",
+            image="http://tourism.com/images/alameda-alegra.jpg",
             city=city_floripa,
             country=country,
             category=category,
@@ -44,7 +44,7 @@ class EscaparateViewSetTestClass(TestCase):
 
         Hotel.objects.create(
             hotel_name="Ibis Poços de Caldas",
-            image="http://sbtur.com/images/ibis-pocos-de-caldas.jpg",
+            image="http://tourism.com/images/ibis-pocos-de-caldas.jpg",
             city=city_caldas,
             country=country,
             category=category,
@@ -73,8 +73,8 @@ class EscaparateViewSetTestClass(TestCase):
 
         for hotel in hoteles:
             self.escaparate.itens.add(hotel)
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 
