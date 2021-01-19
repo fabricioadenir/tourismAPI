@@ -14,8 +14,8 @@ class CityViewSetTestClass(TestCase):
 
     def setUp(self):
         self.city = City.objects.create(name="Porto Alegre", state="RS")
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 

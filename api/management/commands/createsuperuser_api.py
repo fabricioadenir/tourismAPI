@@ -2,10 +2,10 @@ from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 import os
 from dotenv import load_dotenv
-from sbtur.settings.base import BASE_DIR
+from tourism.settings.base import BASE_DIR
 from pathlib import Path
 
-env_path = Path(BASE_DIR) / 'environment/sbtur.env'
+env_path = Path(BASE_DIR) / 'environment/tourism.env'
 load_dotenv(dotenv_path=env_path)
 
 

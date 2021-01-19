@@ -9,9 +9,9 @@ ALLOWED_HOSTS += ['seu_dns']
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASE = decouple.config("DATABASE", default="sbtur")
-DB_USER = decouple.config("DB_USER", default="sbtur_user")
-DB_PWD = decouple.config("DB_PWD", default="sbtur_pwd")
+DATABASE = decouple.config("DATABASE", default="tourism")
+DB_USER = decouple.config("DB_USER", default="tourism_user")
+DB_PWD = decouple.config("DB_PWD", default="tourism_pwd")
 DB_HOST = decouple.config("DB_HOST", default="localhost")
 DB_PORT = decouple.config("DB_PORT", default=5432, cast=int)
 

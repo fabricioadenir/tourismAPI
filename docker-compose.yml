@@ -1,7 +1,7 @@
 version: '2.2'
 services:
     db:
-        container_name: db_sbtur
+        container_name: db_tourism
         image: postgres:10.5
         ports:
             - "5432:5432"
@@ -12,8 +12,8 @@ services:
             interval: 5s
             timeout: 5s
             retries: 5
-    sbtur:
-        container_name: sbtur
+    tourism:
+        container_name: tourism
         build: .
         command: >
             bash -c " while !</dev/tcp/db/5432; do sleep 1; done
@@ -25,8 +25,8 @@ services:
         ports:
             - '8000:8000'
         env_file:
-            ./environment/sbtur.env
+            ./environment/tourism.env
         volumes:
-            - .:/sbturAPI
+            - .:/tourismAPI
         depends_on:
             - db

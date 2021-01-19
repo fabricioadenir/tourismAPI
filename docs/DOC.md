@@ -1,4 +1,4 @@
-# sbturAPI
+# tourismAPI
 
 # v0.1.0
 
@@ -39,17 +39,17 @@ http://localhost:8000/vitrines/ method GET
 
 - Enviar como payload um array { "routes": ["/"] }
 - Como mostra a imagem.
-![ ](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/barra.png?raw=true)
+![ ](https://github.com/fabricioadenir/tourismAPI/blob/main/docs/barra.png?raw=true)
 
 #### Listagem das vitrines para página `/destinos`
 
 - Enviar como payload um array { "routes": ["/destinos"] }
 - Como mostra a imagem.
-![ ](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/destinos.png?raw=true)
+![ ](https://github.com/fabricioadenir/tourismAPI/blob/main/docs/destinos.png?raw=true)
 
 
 #### Listagem das vitrines para página `/sobre`
 
 - Enviar como payload um array { "routes": ["/sobre"] }
 - Como mostra a imagem.
-![ ](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/sobre.png?raw=true)
+![ ](https://github.com/fabricioadenir/tourismAPI/blob/main/docs/sobre.png?raw=true)

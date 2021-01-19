@@ -1,8 +1,8 @@
 openapi: 3.0.2
 info:
-  title: "SBTUR - API para gerenciamento de vitrines de promoções"
+  title: "tourism - API para gerenciamento de vitrines de promoções"
   version: 0.1.0
-  description: API desenvolvida para implementar turismo na SBTUR
+  description: API desenvolvida para implementar turismo na tourism
 paths:
   /vitrines/:
     get:

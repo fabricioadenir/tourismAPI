@@ -1,12 +1,12 @@
-<img src="docs/sbtur.png" width="123px" alt="verifica.me" align="right">
+<img src="docs/tourism.png" width="123px" alt="verifica.me" align="right">
 
-# sbturAPI
+# tourismAPI
 
 # v0.1.0
 
 Esta API é responsável por implementar vitrines de promoções, possibilitando cadastros de promoções e suas alterações necessárias.
 
-**Instalação e configuração** [ROI](https://github.com/fabricioadenir/sbturAPI/blob/master/ROI.md)
+**Instalação e configuração** [ROI](https://github.com/fabricioadenir/tourismAPI/blob/master/ROI.md)
 
 ***
 Depende de:
@@ -37,7 +37,7 @@ docker-compose up -d --build
 
 * http://localhost:8000/docs
 
-Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://github.com/fabricioadenir/sbturAPI/blob/main/docs/DOC.md) e veja a documentação de uso.
+Para facilitar o uso e exemplicar como a API trabalha [clique aqui](https://github.com/fabricioadenir/tourismAPI/blob/main/docs/DOC.md) e veja a documentação de uso.
 
 &nbsp;
 # Executar testes

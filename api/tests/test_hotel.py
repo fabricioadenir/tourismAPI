@@ -30,14 +30,14 @@ class HotelViewSetTestClass(TestCase):
         
         self.hotel = Hotel.objects.create(
             hotel_name="Alameda Alegra",
-            image="http://sbtur.com/images/alameda-alegra.jpg",
+            image="http://tourism.com/images/alameda-alegra.jpg",
             city=city,
             country=country,
             category=category,
             price=3000
         )
-        self.username = 'sbtur'
-        self.password = 'sbtur_pwd'
+        self.username = 'tourism'
+        self.password = 'tourism_pwd'
         self.user = User.objects.create_superuser(
             self.username, 'test@example.com', self.password)
 
